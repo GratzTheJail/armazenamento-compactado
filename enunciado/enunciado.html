@@ -1,0 +1,689 @@
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+* {
+    scrollbar-color: var(--darkreader-background-b0b0b0, #454a4d) var(--darkreader-background-f1f1f1, #202324);
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+  <title>Software Básico - Primeiro Trabalho</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link media="screen,projection,handheld" href="enunciado_arquivos/style.css" type="text/css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+<style>
+.wrap {
+   margin: 3em;
+}
+body {
+   background: white;
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style><style class="darkreader darkreader--sync" media="screen"></style><meta name="darkreader" content="b71aefcdfab54325995dafab09f2c193"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select option {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+<body>
+<div class="wrap">
+<h1>INF1018 - Software Básico (2025.1)<br>
+Primeiro Trabalho</h1>
+
+
+<h2>Armazenamento compactado </h2>
+<p>
+O objetivo do trabalho é implementar, na linguagem C, uma função
+(<b><code>gravacomp</code></b>)
+que armazena um array de structs em um 
+arquivo binário de forma compactada 
+e uma função (<b><code>mostracomp</code></b>) que permite visualizar 
+um arquivo gerado por <b><code>gravacomp</code></b> na saída padrão (terminal).
+</p><p>
+</p><h3>Instruções Gerais</h3>
+<p>
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+</font></p><hr><font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+Leia com atenção o enunciado do trabalho e as instruções para a entrega.
+Em caso de dúvidas, não invente. Pergunte!
+<hr>
+</font>
+<li>O trabalho deve ser entregue 
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+<b>até a data informada no EaD</b>.
+</font>
+</li><li>Trabalhos entregues com atraso perderão 
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+<b>um ponto por dia de atraso</b>.
+</font></li>
+<li>Trabalhos que não compilem (isto é, que não produzam um executável)
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+ <b>não serão considerados!</b>
+</font>
+Ou seja, receberão grau zero.
+<p>
+ </p></li><li>Os trabalhos devem preferencialmente ser feitos 
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color=""><b>
+em grupos de (no máximo) dois alunos
+</b></font>.</li>
+
+<li>
+Os grupos deverão estar preparados para apresentações orais / demonstrações
+dos trabalhos entregues.
+</li>
+
+<hr>
+
+<p>
+</p><h3>Função <code>gravacomp</code></h3>
+<small>
+</small><pre><small>int gravacomp (int nstructs, void* valores, char* descritor, FILE* arquivo); 
+</small></pre>
+
+A função <b><code>gravacomp</code></b> recebe: 
+<ul>
+<li> <code>nstructs</code>: o número de elementos do array de structs 
+a ser armazenado em arquivo 
+</li><li> <code>valores</code>: um ponteiro para o array de structs propriamente dito
+</li><li> <code>descritor</code>: uma descrição dos campos das structs que compõem o array
+</li><li> <code>arquivo</code>: um arquivo previamente aberto para escrita, em modo binário
+</li></ul>
+
+A função deverá retornar 0 em caso de sucesso, e -1 em caso de erro.
+Apenas erros de E/S (ou seja, erros na gravação do arquivo) devem ser 
+considerados. Assuma que todos os parâmetros fornecidos à função estão 
+corretos.
+<p>
+Atenção: a função não deve fechar o arquivo de saída! Isso deverá
+ser feito pela função que abriu o arquivo (provavelmente, a <code>main</code>).
+</p><p>
+A string <b><code>descritor</code></b> representa o tipo de cada um dos campos 
+das structs (na ordem correeta), conforme abaixo:
+<small></small></p><pre><small>    's' - string (char [])
+    'u' - inteiro sem sinal (unsigned int)
+    'i' - inteiro com sinal (signed int)
+</small></pre>
+
+<p>Para campos do tipo <i>string</i>, deve-se indicar o tamanho
+do array, <b>sempre com dois dígitos</b>. 
+O tamanho máximo das <i>strings</i> armazenadas nas estruturas, 
+por restrição imposta pelo formato do arquivo (como veremos mais adiante),
+é 63, descontado o marcador de fim (<code>\0</code>). Portanto,
+o tamanho máximo do array é limitado a 64.
+
+</p><p>
+Por exemplo, dada a declaração:
+<small></small></p><pre><small>  struct s {
+    int  i1, i2;
+    char s1[3];
+    unsigned int u1;
+    char s2[10];
+  };
+struct s exemplo[5];
+</small></pre>
+a string <code>descritor</code> correspondente é <b><code>"iis03us10"</code></b>.
+<p>
+Assumindo que o arquivo de saída está armazenado em uma variável
+<code><b>arq</b></code>, do tipo <code><b>FILE*</b></code>, a chamada
+para a gravação compactada do array <code><b>exemplo</b></code> (após preenchido)
+seria:
+<small></small></p><pre><small>   res = gravacomp(5, exemplo, "iis03us10", arq);
+</small></pre>
+<hr>
+<b>Atenção!</b> Para acessar os valores dos campos das estruturas (armazenados
+na memória), a função <code>geracomp</code> deve levar em consideração
+as regras de alinhamento especificadas para o ambiente onde ela
+será executada (SO Linux, em uma máquina de 64 bits).
+<b>Os bytes de padding não devem ser armazenados no arquivo!</b>
+<br>
+<hr>
+<h3>Formato do arquivo gerado</h3>
+O formato do arquivo de saída deve ser o seguinte:
+<ul>
+<li>O primeiro byte do arquivo indica o número de structs armazenadas (como 
+um <i>unsigned char</i>).
+Note que o número máximo de structs armazenadas no arquivo é, portanto, 255.
+</li><li>A seguir deverão vir os campos de cada estrutura.
+<p>
+Para cada campo, deverão ser gravados um <i>byte de cabeçalho</i> e, em seguida,
+os bytes que representam o conteúdo compactado do campo, conforme descrito
+a seguir.
+</p></li></ul>
+<p>
+<b>Armazenamento de strings</b>
+</p><p>Para campos do tipo <i>string</i>, o cabeçalho tem o seguinte formato:
+</p><p>
+<table border="1">
+<tbody><tr>
+<th><small>BITS:</small></th>
+<th><small>7</small></th>
+<th><small>6</small></th>
+<th><small>5-0</small></th>
+</tr>
+<tr>
+<td></td>
+<td><small>&nbsp;<b>cont</b>&nbsp;</small></td>
+<td><small>&nbsp;<b>tipo</b>&nbsp;</small></td>
+<td><small>&nbsp;<b>tamanho</b>&nbsp;</small></td>
+</tr>
+</tbody></table>
+</p><p>
+O bit mais significativo (<b>cont</b>) indica se este é o último campo da
+estrutura (1) ou não (0).
+O bit 6 (<b>tipo</b>) deverá conter o valor 1.
+Os bits 5-0 (<b>tamanho</b>) têm o tamanho (em número de bytes) da string
+armazenada a seguir.
+</p><p>
+Após o cabeçalho, devem ser gravados os bytes que compõem a 
+string, <b>porém apenas os bytes anteriores ao marcador de fim de string (\0)</b>.
+Note que o tamanho da string armazenada pode variar de 1 a n-1, onde n é
+o tamanho do vetor que corresponde a esse campo na estrutura (pois o \0
+nunca será gravado). 
+Como temos apenas 6 bits para o tamanho da string, esse tamanho é limitado
+a 63.
+</p><p>Por exemplo, se temos um campo definido como
+<b><code>char s2[10]</code></b>, que não é o último campo da estrutura,
+e neste campo está armazenada a string <b><code>"abc"</code></b>,
+seu cabeçalho terá:
+<small>
+</small></p><ul><small>
+<li>cont: 0
+</li><li>tipo: 1
+</li><li>tamanho: 3
+</li></small></ul><small>
+</small>
+e apenas três bytes serão gravados após o cabeçalho (os
+códigos dos caracteres 'a', 'b'
+e 'c').
+<br><br>
+<b>Armazenamento de inteiros com e sem sinal</b>
+<p>Para campos do tipo <i>inteiro</i>, o cabeçalho tem o seguinte formato:
+</p><p>
+<table border="1">
+<tbody><tr>
+<th><small>BITS:</small></th>
+<th><small>7</small></th>
+<th><small>6-5</small></th>
+<th><small>4-0</small></th>
+</tr>
+<tr>
+<td></td>
+<td><small>&nbsp;<b>cont</b>&nbsp;</small></td>
+<td><small>&nbsp;<b>tipo</b>&nbsp;</small></td>
+<td><small>&nbsp;<b>tamanho</b>&nbsp;</small></td>
+</tr>
+</tbody></table>
+</p><p>
+Novamente, o bit mais significativo (<b>cont</b>) indica se este é o 
+último campo da estrutura (1) ou não (0).
+Os bits 4-0 (<b>tamanho</b>) têm o número de bytes usados para
+representar o valor e 
+os bit 6-5 (<b>tipo</b>) deverão conter
+<small>
+</small></p><ul><small>
+<li> 00 - se o campo é do tipo <b>u</b> (unsigned int)
+</li><li> 01 - se o campo é do tipo <b>i</b> (signed int)
+</li></small></ul><small>
+</small>
+<p>
+Após o cabeçalho, devem ser gravados, <b>em big endian</b>, os bytes que 
+representam o valor do campo. Porém, ao invés de armazenar sempre
+quatro bytes, a função deverá gravar <b>apenas os bytes necessários para manter
+a representação do valor</b>.
+</p><p>
+Por exemplo, se temos um campo do tipo <i>signed int</i> com o valor <b>-1</b>,
+podemos usar apenas um byte para seu valor
+(um byte com valor <b>11111111</b> em binário, ou <b>FF</b> em hexadecimal).
+Desta forma, se esse campo é o último campo da estrutura, seu cabeçalho terá:
+<small>
+</small></p><ul><small>
+<li>cont: 1
+</li><li>tipo: 01
+</li><li>tamanho: 1
+</li></small></ul><small>
+</small>
+e após o cabeçalho será gravado apenas um byte
+<p>
+Se o campo contiver o valor <b>258</b>, precisaremos de dois bytes
+para representar seu valor (o primeiro byte com valor <b>01</b> e
+o segundo com valor <b>02</b>, em hexadecimal).
+</p><p>
+Se o campo contiver o valor -65536 (-2^16), precisaremos de três bytes
+(<b>FF</b>, <b>00</b> e <b>00</b>, nesta ordem).
+</p><p>(Para entender o porque dos valores armazenados, observe a representação
+dos valores originais, em complemento a dois!)
+</p><p>
+</p><hr>
+<b>Atenção! Cuidado com a diferença da compactação de campos do tipo <i>inteiro sem sinal</i> (unsigned int) 
+e <i>inteiro com sinal</i> (signed int)</b>.
+<hr>
+<p>
+Vejamos um exemplo de codificação completa. Suponha a seguinte estrutura:
+<small></small></p><pre><small>  struct s {
+    int  i;
+    char s1[5];
+    unsigned int u;
+  };
+</small></pre>
+e um array com duas estruturas desse tipo. Se os campos da primeira estrutura
+contiverem, nesta ordem, os valores -1, "abc" e 258 e os da segunda os valores
+1, "ABCD" e 65535, o conteúdo armazenado para esse array será
+(com os valores dos bytes exibidos em hexadecimal):
+<small><pre>02 21 ff 43 61 62 63 82 01 02 21 01 44 41 42 43 44 82 ff ff
+</pre></small>
+<br>
+<hr> 
+<h3>Função <code>mostracomp</code></h3>
+<b><small><pre>void mostracomp (FILE *arquivo); 
+</pre></small>
+</b>
+
+<p>
+A função <code>mostracomp</code> permite a visualização
+de um arquivo criado por <code>gravacomp</code> na saída padrão
+(terminal).
+Essa saída pode ser gerada, por exemplo, através de chamadas
+a <code>printf</code>.
+</p><p>
+O único argumento de <code>mostracomp</code> é o descritor de
+um arquivo previamente aberto para leitura,
+em modo binário. Não é necessário considerar erros na leitura desse arquivo.
+A função <code>mostracomp</code> não deve fechar o arquivo de leitura. Isso deverá
+ser feito pela função que abriu o arquivo (provavelmente, a <code>main</code>).
+</p><p>A saída da função <code>mostracomp</code> deve ser a seguinte:
+
+</p><ul>
+<li> uma linha indicando o número de structs armazenadas no arquivo
+</li><li> o tipo e o valor armazenado em cada campo
+</li><li> uma linha em branco deve ser inserida entre cada estrutura
+</li></ul>
+
+Para campos do tipo <em>string</em> deve ser exibido <b>(str)</b> e a string 
+propriamente dita (com formato %s).
+<p>
+Para campos do tipo <em>unsigned int</em>
+deve ser exibido <b>(uns)</b> e o valor original em decimal (formato %u)
+e, entre parênteses, em hexadecimal (formato %08x).
+</p><p>
+Para campos do tipo <em>signed int</em>
+deve ser exibido <b>(int)</b> e o valor original em decimal (formato %d)
+e, entre parênteses, em hexadecimal (formato %08x).
+</p><p>
+Para o arquivo do exemplo discutido acima, a saída de <code> mostracomp </code> seria
+
+<small></small></p><pre><small>Estruturas: 2
+
+(int) -1 (ffffffff)
+(str) abc
+(uns) 258 (00000102)
+
+(int) 1 (00000001)
+(str) ABCD
+(uns) 65535 (0000ffff)
+
+</small></pre>
+
+<br>
+<hr>
+<h2>Implementação e Execução</h2>
+<p>
+Você deve criar um arquivo fonte chamado 
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+<b><code>gravacomp.c</code></b>
+</font>
+contendo as duas funções descritas acima (<code>gravacomp e mostracomp</code>)
+e funções auxiliares, se for o caso.
+Esse arquivo <b>não deve conter uma função <code>main</code></b>.
+</p><p>O arquivo deverá incluir o arquivo de cabeçalho
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color=""> <code><b>gravacomp.h</b></code> </font>,
+fornecido <a href="https://www.inf.puc-rio.br/~inf1018/2025.1/trabs/t1/gravacomp.h">aqui</a>.
+Você <b>não</b> pode criar outros arquivos .c ou .h nem mesmo modificar o arquivo .h distribuído.
+</p><p>
+Para testar seu programa, crie um outro arquivo,
+por exemplo,
+<font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color="">
+<code><b>teste.c</b></code>
+</font>
+, contendo a função <code>main</code>.
+</p><p>Note que é responsabilidade da função <code>main</code> abrir o arquivo 
+a ser gravado (por <code>gravacomp</code>) ou lido (por <code>mostracomp</code>).
+O descritor do arquivo aberto será passado, como parâmetro, para essas
+funções.
+</p><p>
+Você pode criar seu programa executável, <code>teste</code>, com a linha:
+</p><pre>gcc -Wall -o teste gravacomp.c teste.c
+</pre>
+
+<br>
+<hr>
+<h2>Dicas</h2>
+<p>Implemente seu trabalho por partes, testando cada parte implementada
+antes de prosseguir.
+</p><p>Por exemplo, você pode implementar primeiro a gravação do arquivo
+compactado. Comece implementando casos simples 
+e vá introduzindo mais tipos de campos à medida
+que os casos anteriores estejam funcionando. Não esqueça de experimentar
+diferentes tipos de alinhamento!
+</p><p>
+Para verificar o conteúdo do arquivo gravado, você pode usar o utilitário
+<b><code>hexdump</code></b>. Por exemplo, o comando
+<small></small></p><pre><small>hexdump -C &lt;nome-do-arquivo&gt;
+</small></pre>
+exibe o conteúdo do arquivo especificado byte a byte, em hexadecimal
+(16 bytes por linha). A segunda coluna de cada linha (entre '|') exibe
+os caracteres ASCII correspondentes a esses bytes, se eles existirem.
+<p>Para abrir um arquivo para gravação ou leitura em formato binário,
+use a função
+<small></small></p><pre><small>FILE *fopen(char *path, char *mode);
+</small></pre>
+descrita em <code>stdio.h</code>. Seus argumentos são:
+<ul>
+<li> <code>path</code>: nome do arquivo a ser aberto
+</li><li> <code>mode</code>: uma string que, no nosso caso, será <b>"rb"</b>
+para abrir o arquivo para leitura em modo binário ou <b>"wb"</b>
+para abrir o arquivo para escrita em modo binário.
+</li></ul>
+A letra 'b', que indica o modo binário, é ignorada em sistemas como Linux,
+que tratam da mesma forma arquivos de tipos texto e binário.
+Mas ela é necessária em outros sistemas, 
+como Windows,
+que tratam de forma diferente arquivos de tipos texto e binário
+(interpretando/modificando, por exemplo, bytes de arquivos "texto"
+que correspondem a caracteres de controle).
+<p>Para fazer a leitura e gravação do arquivo, uma sugestão é
+pesquisar as funções <code>fwrite</code>/<code>fread</code> e
+<code>fputc</code>/<code>fgetc</code>.
+
+<br><br>
+</p><hr>
+<h2>Entrega</h2>
+<p>
+Devem ser entregues <b>via Moodle</b> dois arquivos:
+</p><ol>
+<li> o arquivo fonte <font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color=""><b>gravacomp.c</b></font>
+<p> Coloque no início do arquivo fonte, como comentário, os nomes dos integrantes
+do grupo, da seguinte forma:
+</p><pre>  /* Nome_do_Aluno1 Matricula Turma */
+  /* Nome_do_Aluno2 Matricula Turma */
+</pre>
+Lembre-se que este arquivo não deve conter a função <code>main</code>!
+</li><li><p> um arquivo texto, chamado <font color="blue" style="--darkreader-inline-color: var(--darkreader-text-0000ff, #337dff);" data-darkreader-inline-color=""><b>relatorio.txt</b></font>,
+descrevendo os testes realizados,
+o que está funcionando e, eventualmente, o que não está funcionando.
+Mostre exemplos de estruturas testadas (casos de sucesso e insucesso,
+se houver)!
+Não é necessário explicar a sua implementação neste relatório. Seu programa
+deve ser suficientemente claro e bem comentado.
+</p><p>Coloque também no relatório o nome dos integrantes do grupo.
+</p></li></ol>
+<b>Coloque na área de texto da tarefa do Moodle
+os nomes e turmas dos integrantes do grupo.</b>
+<p>
+Para grupos de alunos da mesma turma, apenas uma entrega é necessária (usando o <em>login</em> de um dos
+integrantes do grupo).
+
+
+</p></div></body></html>
