@@ -1,0 +1,276 @@
+Guilherme Melo Gratz 2211068 3WA
+
+Vários testes foram realizados para verificar se as funções estavam executando corretamente durante a implementação.
+Estes testes não serão explicados aqui, uma vez que, testadas e funcionando, servem de insumo para gravacomp e mostracomp.
+Se elas não estivessem funcionando, os testes que serão explicados das funções gravacomp e mostracomp não seriam corretos.
+Desta forma, os testes para gravacomp e mostracomp servem como um teste para todas as outras, uma vez que essas funções
+não funcionariam corretamente sem as outras não funcionassem corretamente.
+
+Os testes 4 a 9 foram feitos visando testes das funções de cálculo de padding (mesmo que elas também tenham sido testadas
+individualmente).
+
+
+
+
+TESTE 1
+
+Para o struct:
+struct t1
+{
+    char s1[15];
+    int i;
+    char s2[21];
+}; typedef struct t1 T1;
+
+E os valores:
+T1 teste1[4];
+teste1[0].i = -123; strcpy(teste1[0].s1, "teste1"); strcpy(teste1[0].s2, "pastel");
+teste1[1].i = -13; strcpy(teste1[1].s1, "columbia"); strcpy(teste1[1].s2, "porcada");
+teste1[2].i = 242353; strcpy(teste1[2].s1, "tony"); strcpy(teste1[2].s2, "mary");
+teste1[3].i = -232145; strcpy(teste1[3].s1, "marmelada"); strcpy(teste1[3].s2, "poste");
+
+Recebi a saída:
+TESTE 1:
+Estruturas: 4
+
+(str) teste1
+(int) -123 (ffffff85)
+(str) pastel
+
+(str) columbia
+(int) -13 (fffffff3)
+(str) porcada
+
+(str) tony
+(int) 242353 (0003b2b1)
+(str) mary
+
+(str) marmelada
+(int) -232145 (fffc752f)
+(str) poste
+
+
+
+
+TESTE 2
+
+Para o struct:
+struct t2
+{
+    int i;
+    char s1[6];
+    unsigned int u;
+}; typedef struct t2 T2;
+
+E os valores:
+T2 teste2[2];
+teste2[0].i = -1; strcpy(teste2[0].s1, "abc");  teste2[0].u = 258;
+teste2[1].i = 1;  strcpy(teste2[1].s1, "ABCD"); teste2[1].u = 65535;
+
+Recebi a saída:
+TESTE 2:
+Estruturas: 2
+
+(int) -1 (ffffffff)
+(str) abc
+(uns) 258 (00000102)
+
+(int) 1 (00000001)
+(str) ABCD
+(uns) 65535 (0000ffff)
+
+
+
+
+TESTE 3
+
+Para o struct:
+struct s{
+    int i1, i2;
+    char s1[4];
+    unsigned int u1;
+    char s2[10];
+}; typedef struct s S;
+
+E os valores:
+S teste3; teste3.i1 = 0x00834500; teste3.i2 = -0x00834500; teste3.u1 = 0x00834500;
+strcpy(teste3.s1, "MA"); strcpy(teste3.s2, "mary tony");
+
+Recebi a saída:
+TESTE 3:
+Estruturas: 1
+
+(int) 8602880 (00834500)
+(int) -8602880 (ff7cbb00)
+(str) MA
+(uns) 8602880 (00834500)
+(str) mary tony
+
+
+
+
+TESTE 4
+
+Para o struct:
+struct t4
+{
+    int i;
+    char s[4];
+}; typedef struct t4 T4;
+
+E os valores:
+T4 vt4[2];
+vt4[0].i = -12313; strcpy(vt4[0].s, "123");
+vt4[1].i = 2353; strcpy(vt4[1].s, "333");
+
+Recebi a saída:
+TESTE 4:
+Estruturas: 2
+
+(int) -12313 (ffffcfe7)
+(str) 123
+
+(int) 2353 (00000931)
+(str) 333
+
+
+
+
+TESTE 5
+
+Para o struct:
+struct t5
+{
+    int i;
+    char s[5];
+};  typedef struct t5 T5;
+
+E os valores:
+T5 vt5[2];
+vt5[0].i = 12; strcpy(vt5[0].s, "amor");
+vt5[1].i = 24; strcpy(vt5[1].s, "gaga");
+
+Recebi a saída:
+TESTE 5:
+Estruturas: 2
+
+(int) 12 (0000000c)
+(str) amor
+
+(int) 24 (00000018)
+(str) gaga
+
+
+
+
+TESTE 6
+
+Para o struct:
+struct t6
+{
+    int i;
+    char s[6];
+}; typedef struct t6 T6;
+
+E os valores:
+T6 vt6[2];
+vt6[0].i = 777; strcpy(vt6[0].s, "maryt");
+vt6[1].i = 333; strcpy(vt6[1].s, "onys");
+
+Recebi a saída:
+TESTE 6:
+Estruturas: 2
+
+(int) 777 (00000309)
+(str) maryt
+
+(int) 333 (0000014d)
+(str) onys
+
+
+
+
+TESTE 7
+
+Para o struct:
+struct t7
+{
+    int i;
+    char s[7];
+}; typedef struct t7 T7;
+
+E os valores:
+T7 vt7[2];
+vt7[0].i = 0x32; strcpy(vt7[0].s, "kkkkkk");
+vt7[1].i = 0x99; strcpy(vt7[1].s, "bomdia");
+
+Recebi a saída:
+TESTE 7:
+Estruturas: 2
+
+(int) 50 (00000032)
+(str) kkkkkk
+
+(int) 153 (00000099)
+(str) bomdia
+
+
+
+
+TESTE 8
+
+Para o struct:
+struct t8
+{
+    int i;
+    unsigned int u1, u2;
+}; typedef struct t8 T8;
+
+E os valores:
+T8 vt8[2];
+vt8[0].i = -12313; vt8[0].u1 = 12313; vt8[0].u2 = 0x12312312;
+vt8[1].i = 2353; vt8[1].u1 = 0xffffffff; vt8[1].u2 = 0;
+
+Recebi a saída:
+TESTE 8:
+Estruturas: 2
+
+(int) -12313 (ffffcfe7)
+(uns) 12313 (00003019)
+(uns) 305210130 (12312312)
+
+(int) 2353 (00000931)
+(uns) 4294967295 (ffffffff)
+(uns) 0 (00000000)
+
+
+
+
+TESTE 9
+
+Para o struct:
+struct t9
+{
+    char s1[4], s2[5], s3[20];
+}; typedef struct t9 T9;
+
+E os valores:
+T9 vt9[2];
+strcpy(vt9[0].s1, "rrr"); strcpy(vt9[0].s2, "mary"); strcpy(vt9[0].s3, "humberto");
+strcpy(vt9[1].s1, "bbb"); strcpy(vt9[1].s2, "tony"); strcpy(vt9[1].s3, "avenida");
+
+Recebi a saída:
+TESTE 9:
+Estruturas: 2
+
+(str) rrr
+(str) mary
+(str) humberto
+
+(str) bbb
+(str) tony
+(str) avenida
+
+
+Como se pode ver, todos os structs foram salvos e lidos de forma correta e como esperado.
+Todos os casos de padding foram testados e todos foram corretamente implementados pelo programa.
